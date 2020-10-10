@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    letter-spacing: 3px;
+}
+.containerCss .nav-tabs .nav-link.active  {
+    background-color: rgb(248, 232, 0);
+    border-color: #dee2e6 #dee2e6 rgb(248, 232, 0);
+}
+.containerCss .tab-content {
+    height: 15vw;
+    border: 1px solid;
+    border-color:rgb(248, 232, 0) #dee2e6 #dee2e6 #dee2e6 ;
+}
+.rasta {
+    margin: 20px 10px;
+}
+.active {
+    background-color: rgb(248, 232, 0);
+    height: 100%;
+}
+.tab-pane .mygtukas {
+    background-color: black;
+    color:white;
+    
+}
+form {
+    height: 100%;
+}
+i {
+    font-size: 25px;
+    position: relative;
+    top:4px;
+    padding-right: 10px;
+}
+.row {
+    height: 100%;
+}
+.nav-item .nav-link {
+    color: black;
+    padding: 1.7vw;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid mt-5 containerCss">
+        <h1 class="mb-5">Pašto kodai ir adresai</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="far fa-envelope"></i>Pašto kodų paieška</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-map-marker-alt"></i>Adresų paieška</a>
+            </li>
+          </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active px-5" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <form>
+                    <div class="row align-items-center">
+                      <div class="col-5">
+                        <input type="text" id="miestas" class="form-control" placeholder="Miestas">
+                      </div>
+                      <div class="col-5">
+                        <input type="text" id="adresas" class="form-control" placeholder="Adresas pvz. Vivulskio 6 ">
+                      </div>
+                      <div class="col-2">
+                        <input type="button" value="Ieškoti" id="press" class="form-control btn mygtukas">
+                      </div>
+                      
+                    </div>
+                  </form>           
+            </div>
+            <div class="tab-pane fade px-5" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <form>
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <input type="text" id="postKodas" class="form-control" placeholder="Įrašykite pašto kodą pvz.12345">
+                      </div>
+                      <div class="col-2">
+                        <input type="button" value="Ieškoti" id="press2" class="form-control btn mygtukas">
+                      </div>
+                      
+                    </div>
+                  </form>        
+            </div>
+            
+        </div>
+        <div class="rasta"></div>
+        <div class="table-responsive-md">
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col-2">Kodas</th>
+                    <th scope="col-3">Paštas</th>
+                    <th scope="col-4">Adresas</th>
+                    <th scope="col-3">Savivaldybė</th>
+                </thead>
+                <tbody class="tableBody">
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
+ <script src="script.js"></script>   
+</body>
+</html>
