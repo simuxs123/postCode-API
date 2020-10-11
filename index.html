@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container-fluid mt-5 containerCss">
-        <h1 class="mb-5">Pašto kodai ir adresai</h1>
+    <div class="container mt-3 containerCss">
+        <h1 class="mb-3 title">Pašto kodai ir adresai</h1>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="far fa-envelope"></i>Pašto kodų paieška</a>
@@ -22,14 +22,14 @@
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active px-5" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <form>
-                    <div class="row align-items-center">
-                      <div class="col-5">
+                    <div class="row align-items-center" id="koduContainer">
+                      <div class="col-12 col-md-5">
                         <input type="text" id="miestas" class="form-control" placeholder="Miestas">
                       </div>
-                      <div class="col-5">
+                      <div class="col-12 col-md-5">
                         <input type="text" id="adresas" class="form-control" placeholder="Adresas pvz. Vivulskio 6 ">
                       </div>
-                      <div class="col-2">
+                      <div class="col-12 col-md-2">
                         <input type="button" value="Ieškoti" id="press" class="form-control btn mygtukas">
                       </div>
                       
@@ -38,11 +38,11 @@
             </div>
             <div class="tab-pane fade px-5" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <form>
-                    <div class="row align-items-center">
-                      <div class="col-6">
+                    <div class="row align-items-center" id="addressContainer">
+                      <div class="col-sm-8 col-lg-6 col-12">
                         <input type="text" id="postKodas" class="form-control" placeholder="Įrašykite pašto kodą pvz.12345">
                       </div>
-                      <div class="col-2">
+                      <div class="col-sm-4 col-lg-3 col-12">
                         <input type="button" value="Ieškoti" id="press2" class="form-control btn mygtukas">
                       </div>
                       
@@ -56,10 +56,10 @@
             <table class="table table-bordered">
                 <thead>
                   <tr>
-                    <th scope="col-2">Kodas</th>
-                    <th scope="col-3">Paštas</th>
-                    <th scope="col-4">Adresas</th>
-                    <th scope="col-3">Savivaldybė</th>
+                    <th scope="col">Kodas</th>
+                    <th scope="col">Paštas</th>
+                    <th scope="col">Adresas</th>
+                    <th scope="col">Savivaldybė</th>
                 </thead>
                 <tbody class="tableBody">
                   
